@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Beam Calculator</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://cdn.jsdelivr.net/npm/chart.js">
+        </script>
+    </head>
+    <body>
+        <div id="loading">
+            <div>
+                <img src="spinner.png" class="logo">
+            </div>
+        </div>
+        <div id="all">
+            <div class="beamCalc">
+                <div>
+                <img src="aaes.png" class="aaesLogo">
+                </div>
+                <div class="beamCalc1">
+                BeamCalc
+                </div>
+                <div class="spacer">
+                        sasas
+                </div>
+                <div class="spacer">
+                    asasa
+                </div>
+                <div class="spacer">
+                    sasas
+                </div>
+                <div class="spacer">
+                asasa
+                </div>
+                <div class="spacer">
+                    sasas
+                </div>
+                <div class="spacer">
+                asasa
+                </div>
+                <div class="signIn">
+                    <button class="buttonSign">Sign In</button>
+                </div>
+                <div class="signIn1">
+                    <button class="buttonCalc">Get BeamCalc</button>
+                </div>
+            </div>
+            <hr>
+            <div class="container">
+                
+            </div>
+        <div class="firstPart">
+            
+        <section>
+            <div class="mainCalc">
+                <div class="mainCalc1">
+                    <div class="input">
+                    <div class="circle1">
+                        <p id=invText1>hey</p>
+                    </div>
+                    <div>
+                        Input
+                    </div>
+                    </div> 
+                    <table>
+                        
+                        <tr>
+                            <td>
+                            </td>
+                        </tr>
+                        <!--<tr>
+                            <td>
+                                <br><br>
+                            Support Type: 
+                            <br>
+                            <label><input type="radio" name="support" value="pin">Pin</label>
+                            <label><input type="radio" name="support" value="fixed">Fixed<br></label>
+                            </td>
+                        </tr>-->
+                        
+                    </table>
+                    <br><br>
+                    <div class="inputText">
+                    <table>
+                    <tr>
+                    <td id="tdInput">
+                    Length:     <input type="number" placeholder="0" id="beamLength"> m
+                    </td>
+                    </tr>
+                    <tr>
+                    <td id="tdInput1">
+                    Load:      <input type="number" placeholder="0" id="beamLoad"> kn/m
+                    </td>
+                    <td>
+                        <p><i> Uniform Distributed Load</i></p>
+                    </td>
+                    </tr>
+                    </table>
+                    <br><br><br>
+                    
+                    <table>
+                        <tr>
+                        <td>
+                            Max Moment:<br>
+                        </td>
+                        <td>
+                            Max Shear:<br>
+                        </td>
+                        </tr>
+                    </table>
+                    <table>
+                        <tr>
+                        <td>
+                            <div class="divTable">
+                            <p id="answer">______ kn-m</p>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="divTable">
+                            <p id="answer1">______ kn-m</p>
+                            </div>
+                        </td>
+                        </tr>
+                    </table>
+
+                    <table>
+                        <tr>
+                            <td style="margin-left: 200px;">
+                                <button id="beamSolve" onclick="solve()">Solve!</button>
+                                <br><br>
+                            </td>
+                        </tr>
+                    </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+            <div class="diagrams" id="diagRams">
+                <div class="diag1">
+                   <div class="circle">
+                    <p id=invText>hey</p>
+                   </div> 
+                   <div>
+                    Diagrams
+                    </div>
+                </div>
+                <div class="shearDiagram">
+                    <img src="beam2.jpg" class="beamImg"><br>
+                    <table class="tdDiag">
+                        <tr>
+                            <td>
+                                <button onclick="showDiag()">Show Diagrams</button>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <canvas id="shearDiagram" width="600" height="400">
+                    </canvas>
+                    <canvas id="momentDiagram" width="600" height="400">
+                    </canvas>
+                </div>
+            </div>
+        </div>
+        <div class="secondPart">
+            <br><br><br><br>
+            <h1 class="bigText">Fast, <u class="under">precise solutions</u> for beam analysis.</h1>
+            <br><br><br>
+            <p id="pSecond">Effortlessly analyze beams with precision and accuracy.<br> 
+                Simplify design, save time, and ensure structural safety with <br>
+                our intuitive beam analysis calculator.</p>
+            <br>
+            <table class="tdLearn">
+                <tr>
+                    <td>
+                        <button id="beamSolve1">Learn More</button>
+                    </td>
+                </tr>
+            </table>
+            <br><br><br><br><br><br><br><br><br><br><br>
+        </div>
+        <script src="script.js">
+        </script>
+        </div>
+    </body>
+</html>
