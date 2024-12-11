@@ -41,7 +41,10 @@
             </div>
             <hr>
             <div class="container">
-                
+                Evaluate beams comprehensively
+                <p class="secondTo">
+                    Compute for <strong style="color: rgb(92, 92, 146);">beam reactions, shears, and moments.</strong> <br>Then, proceed to reinforced concrete design or steel design.
+                </p>
             </div>
         <div class="firstPart">
             
@@ -85,41 +88,40 @@
                     <td id="tdInput1">
                     Load:      <input type="number" placeholder="0" id="beamLoad"> kn/m
                     </td>
-                    <td>
-                        <p><i> Uniform Distributed Load</i></p>
-                    </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left;padding-left: 65px;">
+                            <p><i> Uniform Distributed Load</i></p>
+                        </td>
                     </tr>
                     </table>
                     <br><br><br>
                     
-                    <table>
+                    <table style="width: 250px;margin-left: 20px;">
                         <tr>
-                        <td>
+                        <td style="width: 100px;">
                             Max Moment:<br>
                         </td>
-                        <td>
-                            Max Shear:<br>
-                        </td>
-                        </tr>
-                    </table>
-                    <table>
-                        <tr>
-                        <td>
+                        <td style="width: 100px;">
                             <div class="divTable">
                             <p id="answer">______ kn-m</p>
                             </div>
                         </td>
-                        <td>
+                        </tr>
+                        <tr> 
+                        <td style="width: 100px;">
+                            Max Shear:<br>
+                        </td>
+                        <td style="width: 100px;">
                             <div class="divTable">
                             <p id="answer1">______ kn-m</p>
                             </div>
                         </td>
                         </tr>
                     </table>
-
-                    <table>
+                    <table style="width: 125px;margin-left: 20px;">
                         <tr>
-                            <td style="margin-left: 200px;">
+                            <td>
                                 <button id="beamSolve" onclick="solve()">Solve!</button>
                                 <br><br>
                             </td>
