@@ -5,6 +5,7 @@
         <link rel="stylesheet" href="style.css">
         <script src="https://cdn.jsdelivr.net/npm/chart.js">
         </script>
+        <link rel="icon" type="image/x-icon" href="aaes.png">
     </head>
     <body>
         <div id="loading">
@@ -156,12 +157,25 @@
                     </canvas>
                 </div>
             </div>
-            <div class="diagrams">
-                <div class="diag2">
-                    <div class="circle2">
+            <div class="containDesign">
+                <div class="design">
+                    <div class="diag2">
+                        <div class="circle2">
+                        </div>
+                        <div style="padding-top: 10px;">
+                        RCD
+                        <button id="beamSolve2" onclick="solve()">>></button>
+                        </div>
                     </div>
-                    <div style="padding-top: 10px;">
-                    RCD
+                </div>
+                <div class="design">
+                    <div class="diag2">
+                        <div class="circle2">
+                        </div>
+                        <div style="padding-top: 10px;">
+                        STEEL
+                        <button id="beamSolve3" onclick="solve()">>></button>
+                        </div>
                     </div>
                 </div>
             </div>
