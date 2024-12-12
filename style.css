@@ -12,7 +12,7 @@ body{
     width: 100%;
     display: flex;
     gap: 2%;
-    
+    justify-content: center;
 }
 .secondPart{
     background-color: rgb(255, 255, 255);
@@ -96,6 +96,13 @@ body{
     align-items: center;
     gap: 5px;
 }
+.diag2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    display: flex;
+    gap: 5px;
+    padding-top: 10px;
+}
 .circle{
     background-color: rgb(6, 6, 120);
     border-radius: 30px;
@@ -108,6 +115,14 @@ body{
     width: 20px;
     height: 20px;
     margin-left: 20px;
+}
+.circle2{
+    background-color: rgb(6, 6, 120);
+    border-radius: 30px;
+    width: 20px;
+    height: 20px;
+    margin-left: 25px;
+    margin-top: 10px;
 }
 #invText{
     visibility: hidden;
