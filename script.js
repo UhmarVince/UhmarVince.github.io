@@ -149,3 +149,63 @@ function showDiag(){
 
 }
 
+const canvas = document.getElementById('model');
+const ctx = canvas.getContext('2d');
+
+ctx.beginPath(); // Start a new path
+ctx.moveTo(50, 50); // Starting point (x1, y1)
+ctx.lineTo(283, 50); // Ending point (x2, y2)
+ctx.strokeStyle = 'black'; // Line color
+ctx.lineWidth = 2; // Line thickness
+ctx.stroke(); // Render the line
+
+
+ctx.fillStyle = '#4f4f4f'; // Fill color
+ctx.fillRect(50, 100, 235, 10); // Draw rectangle (x, y, width, height)
+
+ctx.strokeStyle = '#4f4f4f'; // Border color
+ctx.lineWidth = 3; // Border thickness
+ctx.strokeRect(50, 100, 235, 10); // Outline rectangle
+
+
+
+
+//triangle
+ctx.beginPath();
+
+
+//left support
+// Define the three corners of the triangle
+ctx.moveTo(50,110); // First corner (x1, y1)
+ctx.lineTo(60, 130); // Second corner (x2, y2)
+ctx.lineTo(40, 130);  // Third corner (x3, y3)
+
+// Close the path to connect the last point to the first
+ctx.closePath();
+
+// Set fill color and fill the triangle
+ctx.fillStyle = 'black';
+ctx.fill();
+
+// Optional: Set stroke color and outline the triangle
+ctx.strokeStyle = 'black';
+ctx.lineWidth = 2;
+ctx.stroke();
+
+//right support
+// Define the three corners of the triangle
+ctx.moveTo(285,110); // First corner (x1, y1)
+ctx.lineTo(295, 130); // Second corner (x2, y2)
+ctx.lineTo(275, 130);  // Third corner (x3, y3)
+
+// Close the path to connect the last point to the first
+ctx.closePath();
+
+// Set fill color and fill the triangle
+ctx.fillStyle = 'black';
+ctx.fill();
+
+// Optional: Set stroke color and outline the triangle
+ctx.strokeStyle = 'black';
+ctx.lineWidth = 2;
+ctx.stroke();
