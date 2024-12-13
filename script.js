@@ -155,7 +155,7 @@ const ctx = canvas.getContext('2d');
 ctx.beginPath(); // Start a new path
 ctx.moveTo(50, 50); // Starting point (x1, y1)
 ctx.lineTo(283, 50); // Ending point (x2, y2)
-ctx.strokeStyle = 'black'; // Line color
+ctx.strokeStyle = 'white'; // Line color
 ctx.lineWidth = 2; // Line thickness
 ctx.stroke(); // Render the line
 
@@ -209,3 +209,60 @@ ctx.fill();
 ctx.strokeStyle = 'black';
 ctx.lineWidth = 2;
 ctx.stroke();
+
+//LEFT POINT LOAD
+// Vertical line for the arrow
+ctx.beginPath();
+ctx.moveTo(50, 50); // Starting point
+ctx.lineTo(50, 100); // Ending point
+ctx.strokeStyle = 'white';
+ctx.lineWidth = 2;
+ctx.stroke();
+
+// Arrowhead
+ctx.beginPath();
+ctx.moveTo(40, 80); // Left point of the arrowhead
+ctx.lineTo(50, 100); // Bottom point of the arrowhead
+ctx.lineTo(60, 80); // Right point of the arrowhead
+ctx.closePath();
+ctx.fillStyle = 'white';
+ctx.fill();
+
+
+// RIGHT POINT LOAD
+// Vertical line for the arrow
+ctx.beginPath();
+ctx.moveTo(283, 50); // Starting point
+ctx.lineTo(283, 100); // Ending point
+ctx.strokeStyle = 'white';
+ctx.lineWidth = 2;
+ctx.stroke();
+
+// Arrowhead
+ctx.beginPath();
+ctx.moveTo(273, 80); // Left point of the arrowhead
+ctx.lineTo(283, 100); // Bottom point of the arrowhead
+ctx.lineTo(293, 80); // Right point of the arrowhead
+ctx.closePath();
+ctx.fillStyle = 'white';
+ctx.fill();
+
+
+
+//MIDDLE POINT LOAD
+// Vertical line for the arrow
+ctx.beginPath();
+ctx.moveTo(162, 50); // Starting point
+ctx.lineTo(162, 100); // Ending point
+ctx.strokeStyle = 'white';
+ctx.lineWidth = 2;
+ctx.stroke();
+
+// Arrowhead
+ctx.beginPath();
+ctx.moveTo(152, 80); // Left point of the arrowhead
+ctx.lineTo(162, 100); // Bottom point of the arrowhead
+ctx.lineTo(172, 80); // Right point of the arrowhead
+ctx.closePath();
+ctx.fillStyle = 'white';
+ctx.fill();
