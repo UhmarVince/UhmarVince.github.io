@@ -417,7 +417,8 @@ function addSupportLeft(){
     if(leftie === "option1"){
     const canvas2 = document.getElementById('model');
     const ctx = canvas2.getContext('2d');
-
+    
+    ctx.clearRect(36, 112, 100, 100);   
     // Start a new path for the triangle
     ctx.beginPath();
 
@@ -436,8 +437,29 @@ function addSupportLeft(){
     ctx.lineWidth = 2;
     ctx.stroke();
     }else if(leftie === "option-1"){
-        ctx.clearRect(40, 112, 100, 100);
-    }
+        ctx.clearRect(36, 112, 100, 100);
+    }else if(leftie === "option3"){
+        ctx.clearRect(36, 112, 100, 100);
+
+        const x = 50;  // X coordinate
+        const y = 123;  // Y coordinate
+        const radius = 10;  // Radius of the circle
+
+        // Begin drawing the circle
+        ctx.beginPath();
+        ctx.arc(x, y, radius, 0, 2 * Math.PI); // Draw circle (x, y, radius, startAngle, endAngle)
+
+        // Fill the circle with black
+        ctx.fillStyle = 'black';
+        ctx.fill();  // Fill the circle
+
+        // Stroke the circle with black
+        ctx.lineWidth = 2;  // Set the stroke width
+        ctx.strokeStyle = 'black';
+        ctx.stroke();  // Apply stroke
+
+        ctx.closePath();  // Close the path (optional)
+        }
 }
 
 
@@ -450,10 +472,11 @@ function addSupportLeft(){
         const rightie = supportRight.value;
         
         if(rightie === "option1"){
-
+        
+            
         const canvas2 = document.getElementById('model');
         const ctx = canvas2.getContext('2d');
-    
+        ctx.clearRect(273, 112, 100, 100);
         // Start a new path for the triangle
         ctx.beginPath();
     
@@ -473,6 +496,27 @@ function addSupportLeft(){
         ctx.stroke();
         }else if(rightie === "option-1"){
             ctx.clearRect(273, 112, 100, 100);
+        }else if(rightie === "option3"){
+        ctx.clearRect(273, 112, 100, 100);
+
+        const x = 285;  // X coordinate
+        const y = 123;  // Y coordinate
+        const radius = 10;  // Radius of the circle
+
+        // Begin drawing the circle
+        ctx.beginPath();
+        ctx.arc(x, y, radius, 0, 2 * Math.PI); // Draw circle (x, y, radius, startAngle, endAngle)
+
+        // Fill the circle with black
+        ctx.fillStyle = 'black';
+        ctx.fill();  // Fill the circle
+
+        // Stroke the circle with black
+        ctx.lineWidth = 2;  // Set the stroke width
+        ctx.strokeStyle = 'black';
+        ctx.stroke();  // Apply stroke
+
+        ctx.closePath();  // Close the path (optional)
         }
     
     }
