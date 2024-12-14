@@ -389,7 +389,7 @@ function updateBeamLoadText() {
     const text1 = numberInput1.value;
 
     // Clear the text area for the beam load
-    ctx.clearRect(50, 20, 100, 30); // Clear only the text area
+    ctx.clearRect(50, 20, 100, 10); // Clear only the text area
 
     ctx.font = '15px Arial';
     ctx.fillStyle = 'black';
@@ -410,6 +410,67 @@ numberInput1.addEventListener('input', () => {
 });
 
 
+function addSupportLeft(){
+    const supportleft = document.getElementById("options");
+    const leftie = supportleft.value;
+    
+    const canvas2 = document.getElementById('model');
+    const ctx = canvas2.getContext('2d');
+
+    // Start a new path for the triangle
+    ctx.beginPath();
+
+    // Define the triangle on the left
+    ctx.moveTo(50, 110);  // First corner
+    ctx.lineTo(60, 130);  // Second corner
+    ctx.lineTo(40, 130);  // Third corner
+
+    // Close the path and fill
+    ctx.closePath();
+    ctx.fillStyle = 'black';
+    ctx.fill();
+
+    // Optional: Add stroke outline
+    ctx.strokeStyle = 'black';
+    ctx.lineWidth = 2;
+    ctx.stroke();
+
+}
+
+
+    const supportleft = document.getElementById("options");
+    supportleft.addEventListener('change',addSupportLeft);
+
+
+    function addSupportRight(){
+        const supportRight = document.getElementById("options");
+        const rightie = supportRight.value;
+        
+        const canvas2 = document.getElementById('model');
+        const ctx = canvas2.getContext('2d');
+    
+        // Start a new path for the triangle
+        ctx.beginPath();
+    
+        // Define the triangle on the left
+        ctx.moveTo(285, 110);  // First corner
+        ctx.lineTo(295, 130);  // Second corner
+        ctx.lineTo(275, 130);  // Third corner
+    
+        // Close the path and fill
+        ctx.closePath();
+        ctx.fillStyle = 'black';
+        ctx.fill();
+    
+        // Optional: Add stroke outline
+        ctx.strokeStyle = 'black';
+        ctx.lineWidth = 2;
+        ctx.stroke();
+    
+    }
+        const supportRight = document.getElementById("options100");
+        supportRight.addEventListener('change',addSupportRight);
+    
 
 /*
 
