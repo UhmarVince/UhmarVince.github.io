@@ -15,7 +15,7 @@ window.addEventListener("load", function () {
   
 
 
-/*
+
 
 let varLength = document.getElementById("beamLength");
 let varLoad   = document.getElementById("beamLoad");
@@ -44,7 +44,7 @@ function solve(){
     }
 };
 
-
+/*
 function showDiag(){
 
     let diagBoxExtend = document.getElementsByClassName("diagrams")[0];
