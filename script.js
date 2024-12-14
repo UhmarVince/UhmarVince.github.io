@@ -336,8 +336,8 @@ function initializeUDL() {
     if (numberInput1.value && !isUDLInitialized) {
         // Draw the UDL (Uniformly Distributed Load)
         ctx.beginPath();
-        ctx.moveTo(50, 50); // Starting point (x1, y1)
-        ctx.lineTo(283, 50); // Ending point (x2, y2)
+        ctx.moveTo(50, 60); // Starting point (x1, y1)
+        ctx.lineTo(283, 60); // Ending point (x2, y2)
         ctx.strokeStyle = 'white'; // Line color
         ctx.lineWidth = 2; // Line thickness
         ctx.stroke(); // Render the line
@@ -356,7 +356,7 @@ function initializeUDL() {
 function drawPointLoad(x) {
     // Vertical line for the arrow
     ctx.beginPath();
-    ctx.moveTo(x, 50); // Starting point
+    ctx.moveTo(x, 60); // Starting point
     ctx.lineTo(x, 100); // Ending point
     ctx.strokeStyle = 'white';
     ctx.lineWidth = 2;
@@ -364,9 +364,9 @@ function drawPointLoad(x) {
 
     // Arrowhead
     ctx.beginPath();
-    ctx.moveTo(x - 10, 80); // Left point of the arrowhead
+    ctx.moveTo(x - 5, 90); // Left point of the arrowhead
     ctx.lineTo(x, 100); // Bottom point of the arrowhead
-    ctx.lineTo(x + 10, 80); // Right point of the arrowhead
+    ctx.lineTo(x + 5, 90); // Right point of the arrowhead
     ctx.closePath();
     ctx.fillStyle = 'white';
     ctx.fill();
@@ -389,7 +389,7 @@ function updateBeamLoadText() {
     const text1 = numberInput1.value;
 
     // Clear the text area for the beam load
-    ctx.clearRect(50, 20, 100, 10); // Clear only the text area
+    ctx.clearRect(50, 20, 100, 30); // Clear only the text area
 
     ctx.font = '15px Arial';
     ctx.fillStyle = 'black';
@@ -414,6 +414,7 @@ function addSupportLeft(){
     const supportleft = document.getElementById("options");
     const leftie = supportleft.value;
     
+    if(leftie === "option1"){
     const canvas2 = document.getElementById('model');
     const ctx = canvas2.getContext('2d');
 
@@ -421,9 +422,9 @@ function addSupportLeft(){
     ctx.beginPath();
 
     // Define the triangle on the left
-    ctx.moveTo(50, 110);  // First corner
-    ctx.lineTo(60, 130);  // Second corner
-    ctx.lineTo(40, 130);  // Third corner
+    ctx.moveTo(50, 113);  // First corner
+    ctx.lineTo(60, 133);  // Second corner
+    ctx.lineTo(40, 133);  // Third corner
 
     // Close the path and fill
     ctx.closePath();
@@ -434,7 +435,9 @@ function addSupportLeft(){
     ctx.strokeStyle = 'black';
     ctx.lineWidth = 2;
     ctx.stroke();
-
+    }else if(leftie === "option-1"){
+        ctx.clearRect(40, 112, 100, 100);
+    }
 }
 
 
@@ -443,9 +446,11 @@ function addSupportLeft(){
 
 
     function addSupportRight(){
-        const supportRight = document.getElementById("options");
+        const supportRight = document.getElementById("options100");
         const rightie = supportRight.value;
         
+        if(rightie === "option1"){
+
         const canvas2 = document.getElementById('model');
         const ctx = canvas2.getContext('2d');
     
@@ -453,9 +458,9 @@ function addSupportLeft(){
         ctx.beginPath();
     
         // Define the triangle on the left
-        ctx.moveTo(285, 110);  // First corner
-        ctx.lineTo(295, 130);  // Second corner
-        ctx.lineTo(275, 130);  // Third corner
+        ctx.moveTo(285, 113);  // First corner
+        ctx.lineTo(295, 133);  // Second corner
+        ctx.lineTo(275, 133);  // Third corner
     
         // Close the path and fill
         ctx.closePath();
@@ -466,6 +471,9 @@ function addSupportLeft(){
         ctx.strokeStyle = 'black';
         ctx.lineWidth = 2;
         ctx.stroke();
+        }else if(rightie === "option-1"){
+            ctx.clearRect(273, 112, 100, 100);
+        }
     
     }
         const supportRight = document.getElementById("options100");
