@@ -72,15 +72,15 @@ body{
     padding: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    width: 300px;
+    width: 250px;
+    height: 302px;
 }
 .diagrams{
     border-radius: 50px;
     background-color: rgb(255, 255, 255);
-    padding: 10px;
     width: 400px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
-    height: 380px;
+    height: 320px;
     transition: transform 0.3s ease, box-shadow 0.3s ease
 }
 .diagrams:hover {
