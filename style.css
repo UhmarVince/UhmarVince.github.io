@@ -161,6 +161,12 @@ body{
     margin: 30px;
     padding-right: 10%;
 }
+#shearDiagram{
+    visibility: hidden;
+}
+#momentDiagram{
+    visibility: hidden;
+}
 #shearText{
     visibility: hidden;
 }
