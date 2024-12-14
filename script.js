@@ -418,8 +418,10 @@ function addSupportLeft(){
     const canvas2 = document.getElementById('model');
     const ctx = canvas2.getContext('2d');
     
-    ctx.clearRect(36, 112, 100, 100);   
-    // Start a new path for the triangle
+    ctx.clearRect(36, 112, 100, 100);
+    ctx.clearRect(36, 80, 10, 50);   
+
+    // Start a new path for the triangle        
     ctx.beginPath();
 
     // Define the triangle on the left
@@ -438,8 +440,10 @@ function addSupportLeft(){
     ctx.stroke();
     }else if(leftie === "option-1"){
         ctx.clearRect(36, 112, 100, 100);
+        ctx.clearRect(36, 80, 10, 50);   
     }else if(leftie === "option3"){
         ctx.clearRect(36, 112, 100, 100);
+        ctx.clearRect(36, 80, 10, 50);   
 
         const x = 50;  // X coordinate
         const y = 123;  // Y coordinate
@@ -459,7 +463,17 @@ function addSupportLeft(){
         ctx.stroke();  // Apply stroke
 
         ctx.closePath();  // Close the path (optional)
-        }
+    }else if(leftie === "option2"){
+            ctx.clearRect(36, 112, 100, 100);
+            ctx.clearRect(40, 80, 3, 50);
+    
+            ctx.beginPath(); // Start a new path
+            ctx.moveTo(43, 80); // Starting point (x1, y1)
+            ctx.lineTo(43, 130); // Ending point (x2, y2)
+            ctx.strokeStyle = 'black'; // Line color
+            ctx.lineWidth = 6; // Line thickness
+            ctx.stroke(); // Render the line
+    }
 }
 
 
@@ -477,6 +491,7 @@ function addSupportLeft(){
         const canvas2 = document.getElementById('model');
         const ctx = canvas2.getContext('2d');
         ctx.clearRect(273, 112, 100, 100);
+        ctx.clearRect(288, 80, 50, 50);
         // Start a new path for the triangle
         ctx.beginPath();
     
@@ -496,8 +511,10 @@ function addSupportLeft(){
         ctx.stroke();
         }else if(rightie === "option-1"){
             ctx.clearRect(273, 112, 100, 100);
+            ctx.clearRect(288, 80, 50, 50);
         }else if(rightie === "option3"){
         ctx.clearRect(273, 112, 100, 100);
+        ctx.clearRect(288, 80, 50, 50);
 
         const x = 285;  // X coordinate
         const y = 123;  // Y coordinate
@@ -517,6 +534,17 @@ function addSupportLeft(){
         ctx.stroke();  // Apply stroke
 
         ctx.closePath();  // Close the path (optional)
+        }else if(rightie === "option2"){
+        ctx.clearRect(273, 112, 100, 100);
+        ctx.clearRect(288, 80, 50, 50);
+        
+
+        ctx.beginPath(); // Start a new path
+        ctx.moveTo(291, 80); // Starting point (x1, y1)
+        ctx.lineTo(291, 130); // Ending point (x2, y2)
+        ctx.strokeStyle = 'black'; // Line color
+        ctx.lineWidth = 6; // Line thickness
+        ctx.stroke(); // Render the line
         }
     
     }
