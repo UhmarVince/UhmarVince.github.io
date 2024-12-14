@@ -72,7 +72,7 @@ body{
     padding: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    width: 250px;
+    width: 300px;
     height: 302px;
 }
 .diagrams{
@@ -357,4 +357,13 @@ table{
 .model{
     background-color: #ffdea4;
     border-radius: 20px;
+}
+#options{
+    border-radius: 15px;
+    background-color: #fcf3e1;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    padding: 2px;
+}
+.canvas{
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
 }
