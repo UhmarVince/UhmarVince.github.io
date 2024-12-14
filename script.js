@@ -149,8 +149,134 @@ function showDiag(){
 
 }
 
-const canvas = document.getElementById('model');
-const ctx = canvas.getContext('2d');
+
+// Get the canvas and its context
+const canvas2 = document.getElementById('model');
+const ctx = canvas2.getContext('2d');
+
+// Get the input elements
+const numberInput = document.getElementById('beamLength');
+const numberInput1 = document.getElementById('beamLoad');
+
+// Flags to check if drawings need to be initialized
+let isBeamInitialized = false;
+let isUDLInitialized = false;
+
+// Function to initialize the beam drawing
+function initializeBeam() {
+    // Draw the beam only if beamLength input exists
+    if (numberInput.value && !isBeamInitialized) {
+        // Draw the beam
+        ctx.fillStyle = '#4f4f4f'; // Fill color for beam
+        ctx.fillRect(50, 100, 235, 10); // Draw beam (x, y, width, height)
+
+        ctx.strokeStyle = '#4f4f4f'; // Border color
+        ctx.lineWidth = 3; // Border thickness
+        ctx.strokeRect(50, 100, 235, 10); // Outline beam
+
+        // Mark as initialized to prevent redrawing
+        isBeamInitialized = true;
+    }
+}
+
+// Function to initialize the UDL and point loads drawing
+function initializeUDL() {
+    // Draw the UDL and point loads only if beamLoad input exists
+    if (numberInput1.value && !isUDLInitialized) {
+        // Draw the UDL (Uniformly Distributed Load)
+        ctx.beginPath();
+        ctx.moveTo(50, 50); // Starting point (x1, y1)
+        ctx.lineTo(283, 50); // Ending point (x2, y2)
+        ctx.strokeStyle = 'white'; // Line color
+        ctx.lineWidth = 2; // Line thickness
+        ctx.stroke(); // Render the line
+
+        // Draw point loads (left, middle, right)
+        drawPointLoad(50);
+        drawPointLoad(162);
+        drawPointLoad(283);
+
+        // Mark as initialized to prevent redrawing
+        isUDLInitialized = true;
+    }
+}
+
+// Function to draw a point load at a specified x-coordinate
+function drawPointLoad(x) {
+    // Vertical line for the arrow
+    ctx.beginPath();
+    ctx.moveTo(x, 50); // Starting point
+    ctx.lineTo(x, 100); // Ending point
+    ctx.strokeStyle = 'white';
+    ctx.lineWidth = 2;
+    ctx.stroke();
+
+    // Arrowhead
+    ctx.beginPath();
+    ctx.moveTo(x - 10, 80); // Left point of the arrowhead
+    ctx.lineTo(x, 100); // Bottom point of the arrowhead
+    ctx.lineTo(x + 10, 80); // Right point of the arrowhead
+    ctx.closePath();
+    ctx.fillStyle = 'white';
+    ctx.fill();
+}
+
+// Function to update the beam length text
+function updateBeamLengthText() {
+    const text = numberInput.value;
+
+    // Clear the text area for the beam length
+    ctx.clearRect(150, 130, 100, 20); // Clear only the text area
+
+    ctx.font = '15px Arial';
+    ctx.fillStyle = 'black';
+    ctx.fillText(text + " m", 160, 145); // Draw text (text, x, y)
+}
+
+// Function to update the beam load text
+function updateBeamLoadText() {
+    const text1 = numberInput1.value;
+
+    // Clear the text area for the beam load
+    ctx.clearRect(50, 20, 100, 30); // Clear only the text area
+
+    ctx.font = '15px Arial';
+    ctx.fillStyle = 'black';
+    ctx.fillText(text1 + " kn/m", 60, 40); // Draw text (text, x, y)
+}
+
+// Add input event listeners to the textboxes
+numberInput.addEventListener('input', () => {
+    // Initialize the beam only if input exists
+    initializeBeam();
+    updateBeamLengthText();
+});
+
+numberInput1.addEventListener('input', () => {
+    // Initialize the UDL only if input exists
+    initializeUDL();
+    updateBeamLoadText();
+});
+
+
+
+/*
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+const canvas1 = document.getElementById('model');
+const ctx = canvas1.getContext('2d');
 
 ctx.beginPath(); // Start a new path
 ctx.moveTo(50, 50); // Starting point (x1, y1)
@@ -266,3 +392,22 @@ ctx.lineTo(172, 80); // Right point of the arrowhead
 ctx.closePath();
 ctx.fillStyle = 'white';
 ctx.fill();
+
+//TEXT
+
+    // Set font properties
+    ctx.font = "20px Arial"; // font size and font family
+    ctx.fillStyle = "blue";  // text fill color
+    ctx.textAlign = "center"; // align the text (left, right, center)
+    ctx.textBaseline = "middle"; // baseline of the text
+
+    // Draw filled text
+    ctx.fillText(varLoad.value, canvas.width / 2, canvas.height / 2);
+
+    // Optional: Draw outlined text
+    ctx.strokeStyle = "red"; // text stroke color
+    ctx.lineWidth = 1;       // stroke width
+    ctx.strokeText("Hello, Canvas!", canvas.width / 2, canvas.height / 2 + 40);
+
+
+*/
