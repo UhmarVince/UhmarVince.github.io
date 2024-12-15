@@ -37,7 +37,7 @@
                     <button class="buttonSign">Sign In</button>
                 </div>
                 <div class="signIn1">
-                    <button class="buttonCalc">Get BeamCalc</button>
+                    <button class="buttonCalc">Watch Demo</button>
                 </div>
             </div>
             <hr>
@@ -109,17 +109,17 @@
 
                     <label for="options" style="margin-left: 20px;">Supports:</label>
                     <select id="options" name="options" class="options">
-                        <option value="option-1">None</option>
-                        <option value="option1">Pinned</option>
-                        <option value="option2">Fixed</option>
-                        <option value="option3">Roller</option>
+                        <option value="0">None</option>
+                        <option value="1">Roller</option>
+                        <option value="2">Pinned</option>
+                        <option value="3">Fixed</option>
                     </select>
 
                     <select id="options100" name="options100" style="margin-left: 10px;" class="options">
-                        <option value="option-1">None</option>
-                        <option value="option1">Pinned</option>
-                        <option value="option2">Fixed</option>
-                        <option value="option3">Roller</option>
+                        <option value="0">None</option>
+                        <option value="1">Roller</option>
+                        <option value="2">Pinned</option>
+                        <option value="3">Fixed</option>
                     </select>
 
 
@@ -174,15 +174,15 @@
                     <canvas class="model" width="340" height="200" id="model">
                         <canvas class="model2" width="100" height="100"></canvas>
                     </canvas><br>
-                    <!--
+                    
                     <table class="tdDiag">
                         <tr>
                             <td>
-                                <button onclick="showDiag()">Show Diagrams</button>
+                                <button onclick="releaseAll()" id="release">Show Diagrams</button>
                             </td>
                         </tr>
                     </table>
-                    -->
+                    
                     <canvas id="shearDiagram" width="600" height="400">
                     </canvas>
                     <canvas id="momentDiagram" width="600" height="400">

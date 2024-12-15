@@ -14,11 +14,11 @@ window.addEventListener("load", function () {
 }); 
   
 
-
-
+function releaseAll(){
 
 let varLength = document.getElementById("beamLength");
 let varLoad   = document.getElementById("beamLoad");
+let varRelease   = document.getElementById("release");
 
 function solve(){
     let maxMoment = (varLoad.value*(varLength.value**2))/8;
@@ -298,3 +298,6 @@ initializeCharts();
 // Bind the function to the input change events
 varLength.addEventListener('input', showDiag);
 varLoad.addEventListener('input', showDiag);
+varRelease.addEventListener('click', showDiag());
+
+}
