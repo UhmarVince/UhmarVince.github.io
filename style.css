@@ -5,11 +5,10 @@ body{
     width: 100%;
 }
 .firstPart {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(225, 53, 53);
     padding-bottom: 70px;
     padding-top: 10px;
-    margin: 0;
-    width: 100%;
+    width: 1000px;
     display: flex;
     gap: 2%;
     justify-content: center;
