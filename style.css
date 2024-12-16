@@ -8,7 +8,7 @@ body{
     background-color: rgb(181, 29, 29);
     padding-bottom: 70px;
     padding-top: 10px;
-    width: 100%;
+    width: auto;
     display: flex;
     justify-content: center;
     flex-direction: row; /* Default: Items in a row */
@@ -17,7 +17,7 @@ body{
     gap: 10px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: auto) {
     .firstPart {
         flex-direction: column; /* Stack items vertically */
         justify-content: center;
