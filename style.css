@@ -4,7 +4,7 @@ body{
     background-color: rgb(255, 255, 255);
     width: 100%;
 }
-.firstPart{
+.firstPart {
     background-color: rgb(255, 255, 255);
     padding-bottom: 70px;
     padding-top: 10px;
@@ -13,21 +13,19 @@ body{
     display: flex;
     gap: 2%;
     justify-content: center;
-    flex-direction: row; /* Default: Items are in a row */
+    flex-direction: row; /* Default: Items in a row */
     flex-wrap: wrap; /* Allows items to wrap to the next row if needed */
 }
-@media (max-width: 768px) { /* For small screens */
-    .firstPart {
-        flex-direction: column; /* Items stack in a column for smaller screens */
-    }
-}
+
 @media (max-width: 768px) {
     .firstPart {
         flex-direction: column; /* Stack items vertically */
-        align-items: flex-start; /* Optional: Align items to the start */
-        gap: 10px; /* Add spacing between items */
+        align-items: center; /* Center items horizontally in column mode */
+        gap: 15px; /* Add spacing between stacked items */
     }
 }
+
+
 .secondPart{
     background-color: rgb(255, 255, 255);
 }
