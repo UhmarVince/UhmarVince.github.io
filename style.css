@@ -52,8 +52,8 @@ body{
     padding-top: 20px;
     padding-bottom: 10px;
 }
-.mainCalc{
-    color:rgb(0, 0, 0);
+.mainCalc {
+    color: rgb(0, 0, 0);
     font-family: Arial, Helvetica, sans-serif;
     font-size: large;
     display: flex;
@@ -61,20 +61,15 @@ body{
     align-items: center;
     opacity: 100%;
     padding-left: 15px;
-    flex-direction: row;        /* Default: Items are in a row */
-    flex-wrap: wrap;            /* Allows items to wrap to the next row if needed */
+    flex-direction: row; /* Default: Items are in a row */
+    flex-wrap: wrap; /* Allows items to wrap to the next row if needed */
 }
-@media (max-width: 768px) {    /* Equivalent to 'sm' breakpoint */
+
+@media (max-width: 768px) { /* For small screens */
     .mainCalc {
-      flex-direction: column;   /* Items stack in a column for smaller screens */
+        flex-direction: column; /* Items stack in a column for smaller screens */
     }
-  }
-  
-@media (min-width: 768px) {    /* Equivalent to 'md' breakpoint */
-    .mainCalc {
-      flex-direction: row;      /* Items remain in a row for medium-sized screens and above */
-    }
-  }
+}
 .mainCalc1:hover {
     transform: scale(1.01) translateY(-5px); /* Move the div up slightly */
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Enhance the shadow */
