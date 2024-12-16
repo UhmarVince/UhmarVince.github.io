@@ -5,24 +5,24 @@ body{
     width: 100%;
 }
 .firstPart {
-    background-color: rgb(225, 53, 53);
+    background-color: rgb(255, 255, 255);
     padding-bottom: 70px;
     padding-top: 10px;
-    width: 1000px;
+    width: 100%;
     display: flex;
-    gap: 2%;
     justify-content: center;
     flex-direction: row; /* Default: Items in a row */
     flex-wrap: wrap; /* Allows items to wrap to the next row if needed */
     justify-items: center;
+    gap: 10px;
 }
 
 @media (max-width: 768px) {
     .firstPart {
         flex-direction: column; /* Stack items vertically */
+        justify-content: center;
         align-items: center; /* Center items horizontally in column mode */
         gap: 15px; /* Add spacing between stacked items */
-        justify-content: center;
     }
 }
 
