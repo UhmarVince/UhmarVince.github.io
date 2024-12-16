@@ -17,12 +17,13 @@ body{
     gap: 10px;
 }
 
-@media (max-width: 768px) {
+@media (100%) {
     .firstPart {
         flex-direction: column; /* Stack items vertically */
         justify-content: center;
         align-items: center; /* Center items horizontally in column mode */
         gap: 15px; /* Add spacing between stacked items */
+        width: 100%;
     }
 }
 
