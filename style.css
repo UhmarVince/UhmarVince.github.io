@@ -5,7 +5,7 @@ body{
     width: 100%;
 }
 .firstPart {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(181, 29, 29);
     padding-bottom: 70px;
     padding-top: 10px;
     width: 100%;
@@ -17,7 +17,7 @@ body{
     gap: 10px;
 }
 
-@media (100%) {
+@media (max-width: 768px) {
     .firstPart {
         flex-direction: column; /* Stack items vertically */
         justify-content: center;
