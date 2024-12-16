@@ -1,11 +1,11 @@
-body{
+html, body{
     margin-right: 0;
     margin-left: 0;
     margin-top: 0;
     background-color: rgb(255, 255, 255);
     width: 100%;
     overflow-x: hidden;
-    padding: 10px;
+    padding-right: 100px;
 }
 .firstPart {
     background-color: rgb(255, 255, 255);
@@ -19,23 +19,14 @@ body{
     flex-wrap: wrap; /* Allows items to wrap to the next row if needed */
     justify-items: center;
     gap: 10px;
-    margin-right: 0;
-    padding-right: 0;
-    margin-left: 0;
-    padding-left: 0;
 }
 
 @media (max-width: 768px) {
     .firstPart {
         flex-direction: column; /* Stack items vertically */
-        justify-content: center;
         align-items: center; /* Center items horizontally in column mode */
         gap: 15px; /* Add spacing between stacked items */
         width: 100%;
-        margin: 0;
-        padding-right: 0;
-        padding-left: 0;
-        max-width: 100%;
     }
 }
 
@@ -86,7 +77,6 @@ body{
     justify-content: center;
     align-items: center;
     opacity: 100%;
-    padding-left: 15px;
 }
 
 
@@ -97,7 +87,6 @@ body{
 .mainCalc1{
     border-radius: 50px;
     background-color: rgb(255, 255, 255);
-    padding: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     width: 300px;
