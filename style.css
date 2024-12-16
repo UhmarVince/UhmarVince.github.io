@@ -1,8 +1,7 @@
 body{
-    padding: 0;
-    margin: 0;
     background-color: rgb(255, 255, 255);
     width: 100%;
+    overflow-x: hidden;
 }
 .firstPart {
     background-color: rgb(181, 29, 29);
@@ -17,13 +16,13 @@ body{
     gap: 10px;
 }
 
-@media (max-width: auto) {
+@media (max-width: 768px) {
     .firstPart {
         flex-direction: column; /* Stack items vertically */
         justify-content: center;
         align-items: center; /* Center items horizontally in column mode */
         gap: 15px; /* Add spacing between stacked items */
-        width: 100%;
+        width: 200%;
     }
 }
 
