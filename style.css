@@ -1,13 +1,14 @@
-html, body{
+body{
     margin-right: 0;
     margin-left: 0;
     margin-top: 0;
     background-color: rgb(255, 255, 255);
     width: 100%;
     overflow-x: hidden;
+    padding: 10px;
 }
 .firstPart {
-    background-color: rgb(181, 29, 29);
+    background-color: rgb(255, 255, 255);
     padding-bottom: 70px;
     padding-top: 10px;
     width: 100%;
