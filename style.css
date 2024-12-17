@@ -143,7 +143,7 @@ body{
     background-color: rgb(255, 255, 255);
     width: 400px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
-    height: 330px;
+    height: 800px;
     transition: transform 0.3s ease, box-shadow 0.3s ease
 }
 @media (max-width: 768px) {
@@ -233,10 +233,10 @@ body{
     padding-right: 10%;
 }
 #shearDiagram{
-    visibility: hidden;
+    visibility: visible;
 }
 #momentDiagram{
-    visibility: hidden;
+    visibility: visible;
 }
 #shearText{
     visibility: hidden;
@@ -311,6 +311,7 @@ th,td{
 }
 .tdDiag{
     width: 340px;
+    background-color: white;
 }
 #tdInput{
     text-align: left;

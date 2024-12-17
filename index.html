@@ -179,11 +179,10 @@
                 <div class="shearDiagram">
 
                     <!--2D Model Canvas-->
-                    <canvas class="model" width="340" height="200" id="model">
-                        <canvas class="model2" width="100" height="100"></canvas>
-                    </canvas><br>
+                    <canvas class="model" width="340" height="200" id="model"></canvas>
+                    <br>
                     
-                    <table class="tdDiag">
+                    <table class="tdDiag" id="tdDiag">
                         <tr>
                             <td>
                               <button onclick="determineSupportCombo()" id="release">Run Analysis</button>
@@ -191,9 +190,9 @@
                         </tr>
                     </table>
                     
-                    <canvas id="shearDiagram" width="600" height="400">
+                    <canvas id="shearDiagram" width="1200" height="800">
                     </canvas>
-                    <canvas id="momentDiagram" width="600" height="400">
+                    <canvas id="momentDiagram" width="1200" height="800">
                     </canvas>
                 </div>
             </div>
