@@ -116,7 +116,7 @@ function determinacy(){
             const canvas3 = document.getElementById('model');
             const ctx = canvas3.getContext('2d');
 
-            ctx.clearRect(200, 20, 200, 40); // Clear only the text area
+            ctx.clearRect(200, 19, 200, 40); // Clear only the text area
 
             ctx.font = '15px Courier';
             ctx.fillStyle = 'red';
@@ -125,7 +125,7 @@ function determinacy(){
             const canvas3 = document.getElementById('model');
             const ctx = canvas3.getContext('2d');
 
-            ctx.clearRect(200, 20, 100, 40); // Clear only the text area
+            ctx.clearRect(200, 19, 100, 40); // Clear only the text area
 
             ctx.font = '15px Arial';
             ctx.fillStyle = 'red';
