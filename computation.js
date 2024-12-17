@@ -1,5 +1,5 @@
 
-   function determineSupportCombo(){
+function determineSupportCombo(){
     const optionSupXX = document.getElementById("options");
     const optionSup100XX = document.getElementById("options100");
     
@@ -86,14 +86,13 @@ function showDiag() {
     (((maxShear) - 0.125 * varLengthValue * varLoadValue) * (0.125 * varLengthValue)) + (0.5 * (0.125 * varLengthValue) * (maxShear - ((maxShear) - 0.125 * varLengthValue * varLoadValue))),
     0
     ];
-    
+
     if (momentChart) {
     momentChart.data.labels = distances;
     momentChart.data.datasets[0].data = moments;
     momentChart.update(); // Update the moment chart with new data
     }
-    }
-    
+}
     // Function to initialize the charts and store references
     function initializeCharts() {
     // Get the context of the canvas elements
@@ -172,15 +171,15 @@ function showDiag() {
     }
     });
     }
-    
+
     // Call this function to initialize the charts when the page loads
     initializeCharts();
-    
+
+    showDiag();
+
     // Bind the function to the input change events
-    varLength.addEventListener('input', showDiag);
-    varLoad.addEventListener('input', showDiag);
-    varLeftSupport.addEventListener('change',showDiag);
-    varRightSupport.addEventListener('change',showDiag);
+    //varLength.addEventListener('input', showDiag);
+    //varLoad.addEventListener('input', showDiag);
 
     }else if(parseInt(kindX.value) === 1 && parseInt(kinderX.value) === 3){ //roller-fixed
         console.log("stable propped");
@@ -202,9 +201,11 @@ function showDiag() {
         console.log("stable");
     }
 }
-
+/** 
     const supportive = document.getElementById("options");
     const supportive1 = document.getElementById("options100");
     
     supportive.addEventListener('change',determineSupportCombo);
-    supportive1.addEventListener('change',determineSupportCombo); 
+    supportive1.addEventListener('change',determineSupportCombo); */
+
+
