@@ -35,7 +35,7 @@ function initializeUDL() {
         ctx.beginPath();
         ctx.moveTo(50, 60); // Starting point (x1, y1)
         ctx.lineTo(283, 60); // Ending point (x2, y2)
-        ctx.strokeStyle = 'white'; // Line color
+        ctx.strokeStyle = 'black'; // Line color
         ctx.lineWidth = 2; // Line thickness
         ctx.stroke(); // Render the line
 
@@ -55,7 +55,7 @@ function drawPointLoad(x) {
     ctx.beginPath();
     ctx.moveTo(x, 60); // Starting point
     ctx.lineTo(x, 100); // Ending point
-    ctx.strokeStyle = 'white';
+    ctx.strokeStyle = 'black';
     ctx.lineWidth = 2;
     ctx.stroke();
 
@@ -65,7 +65,7 @@ function drawPointLoad(x) {
     ctx.lineTo(x, 100); // Bottom point of the arrowhead
     ctx.lineTo(x + 5, 90); // Right point of the arrowhead
     ctx.closePath();
-    ctx.fillStyle = 'white';
+    ctx.fillStyle = 'black';
     ctx.fill();
 }
 

@@ -179,13 +179,8 @@ function showDiag() {
     // Bind the function to the input change events
     varLength.addEventListener('input', showDiag);
     varLoad.addEventListener('input', showDiag);
-    varRelease.addEventListener('click', showDiag());
-
-
-
-
-
-
+    varLeftSupport.addEventListener('change',showDiag);
+    varRightSupport.addEventListener('change',showDiag);
 
     }else if(parseInt(kindX.value) === 1 && parseInt(kinderX.value) === 3){ //roller-fixed
         console.log("stable propped");
