@@ -7,49 +7,49 @@ body{
 .nav {
     display: flex;
     gap: 1rem;
-}
-
-.hamburger {
+  }
+  
+  .hamburger {
     display: none;
     flex-direction: column;
     gap: 5px;
     background: none;
     border: none;
     cursor: pointer;
-}
-
-.hamburger span {
+    padding: 10px;
+    margin-left: 50px;
+    margin-right: 10px;
+  }
+  
+  .hamburger span {
     width: 25px;
     height: 3px;
-    background-color: white;
+    background-color: rgb(0, 0, 0);
     border-radius: 2px;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
     .nav {
-        display: none;
-        flex-direction: column;
-        background-color: #333;
-        position: absolute;
-        top: 100%;
-        right: 0;
-        width: 100%;
-        padding: 1rem 0;
-        transition: max-height 0.3s ease-out;
-        max-height: 0;
-        overflow: hidden;
+      display: none; /* Hidden by default */
+      flex-direction: column;
+      background-color: #333;
+      position: absolute;
+      top: 100%;
+      right: 0;
+      width: 100%;
+      padding: 1rem 0;
     }
-
+  
     .nav.show {
-        display: flex;
-        max-height: 300px; /* Adjust as needed */
+      display: flex; /* Shown when toggled */
     }
-
+  
     .hamburger {
-        display: flex;
+      display: flex;
     }
-}
+  }
+  
 
 .firstPart {
     background-color: rgb(255, 255, 255);

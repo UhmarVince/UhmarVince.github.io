@@ -17,12 +17,10 @@ window.addEventListener("load", function () {
 document.addEventListener("DOMContentLoaded", () => {
     const hamburger = document.querySelector(".hamburger");
     const navMenu = document.querySelector(".nav");
-
+  
     hamburger.addEventListener("click", () => {
-        const expanded = hamburger.getAttribute("aria-expanded") === "true" || false;
-        hamburger.setAttribute("aria-expanded", !expanded);
-        navMenu.classList.toggle("show");
+      navMenu.classList.toggle("show"); // Toggle the "show" class
     });
-});
-
+  });
+  
 
