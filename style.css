@@ -3,7 +3,54 @@ body{
     background-color: rgb(255, 255, 255);
     width: 100%;
     overflow-x: hidden;
-}   
+}
+.nav {
+    display: flex;
+    gap: 1rem;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    border-radius: 2px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 100%;
+        padding: 1rem 0;
+        transition: max-height 0.3s ease-out;
+        max-height: 0;
+        overflow: hidden;
+    }
+
+    .nav.show {
+        display: flex;
+        max-height: 300px; /* Adjust as needed */
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}
+
 .firstPart {
     background-color: rgb(255, 255, 255);
     padding-bottom: 70px;
@@ -347,6 +394,7 @@ table{
 
 #all{
     display: none;
+    padding-top: 1%;
 }
 .aaesLogo{
     width: 50px;
@@ -370,6 +418,8 @@ table{
     text-align: center;
     margin-top: 50px;
     font-weight: bolder;
+    padding-bottom: 30px;
+    margin-bottom: 20px;
 }
 .secondTo{
     color: #4f4f4f;
